@@ -12,27 +12,9 @@
 #define BASE    0
 #define LOWER   1
 #define RAISE   2
-#define ADJUST  3
-#define NUM     4
-#define FUNC    5
+#define NUM     3
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        combo_BOOT {
-            timeout-ms = <50>;
-            key-positions = <4 5 6 7>;
-            bindings = <&bootloader>;
-        };
-
-        combo_BT {
-            timeout-ms = <50>;
-            key-positions = <49 56>;
-            bindings = <&bt BT_SEL 0>;  // Selección de perfil Bluetooth
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -40,7 +22,7 @@
             bindings = <
                 &kp ESC         &kp N1      &kp N2      &kp N3      &kp N4     &kp N5       &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BSPC
                 &lt NUM TAB     &kp Q       &kp W       &kp E       &kp R      &kp T        &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BSPC
-                &kp LCTRL       &kp A       &kp S       &kp D       &lt FUNC F &kp G        &lt ADJUST DEL &kp H     &kp J      &kp K      &kp L      &kp SEMI &kp SQT
+                &kp LCTRL       &kp A       &kp S       &kp D       &lt FUNC F &kp G        &lt DEL     &kp H       &kp J      &kp K      &kp L      &kp SEMI &kp SQT
                 &kp LSHFT       &kp Z       &kp X       &kp C       &kp V      &kp B        &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH   &kp RSHFT RET
                                         &kp LGUI      &lt LOWER SPACE   &kp SPACE  &kp SPACE   &kp ENTER   &kp BSPC   &lt RAISE BSPC  &kp RALT
             >;
@@ -63,16 +45,6 @@
                 &kp LCTRL       &trans      &trans      &trans      &trans     &trans       &kp DEL     &kp MINUS   &kp EQUAL   &kp LBKT    &kp RBKT    &kp BSLH &kp GRAVE
                 &kp LSHFT       &trans      &trans      &trans      &trans     &trans       &kp UNDER   &kp PLUS    &kp LBRC    &kp RBRC    &kp PIPE    &kp TILDE
                                         &kp LGUI      &trans      &kp SPACE  &kp SPACE   &kp BSPC    &mo 3       &kp RALT    &kp RCTRL
-            >;
-        };
-
-        adjust_layer {
-            bindings = <
-                &bt BT_SEL 0    &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR  &none      &none      &none      &none      &none      &none
-                &none           &none        &none        &none        &none        &none       &none      &none      &kp PSCRN  &kp SLCK   &kp PAUSE_BREAK &none
-                &none           &none        &none        &none        &none        &none       &none      &none      &kp INSERT &kp HOME   &kp PG_UP  &none
-                &none           &none        &none        &none        &none        &bootloader &none      &kp DEL    &kp END    &kp PG_DN  &none
-                                        &trans        &trans      &trans      &trans      &trans     &trans      &trans      &trans
             >;
         };
 
