@@ -17,6 +17,22 @@
 #define FUNC    5
 
 / {
+    combos {
+    compatible = "zmk,combos";
+
+    combo_BOOT {
+        timeout-ms = <50>;
+        key-positions = <4 5 6 7>;
+        bindings = <&bootloader>;
+    };
+
+    combo_BT {
+        timeout-ms = <50>;
+        key-positions = <49 56>;
+        bindings = <&bt BT_SEL 0>;  // Specify a Bluetooth profile number
+    };
+};
+
     keymap {
         compatible = "zmk,keymap";
 
