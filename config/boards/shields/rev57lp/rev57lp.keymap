@@ -17,22 +17,6 @@
 #define FUNC    5
 
 / {
-    combos {
-        compatible = "zmk,combos";
-        
-        combo_BOOT {
-            timeout-ms = <50>;
-            key-positions = <4 5 6 7>;
-            bindings = <&bootloader>;
-        };
-
-        combo_BT {
-            timeout-ms = <50>;
-            key-positions = <49 56>;
-            bindings = <&mo BT>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
