@@ -63,5 +63,15 @@
                                                                         &none  &none  &none   &none  &none   &none  &none  &none
                 >;
         };
+
+        raise {
+            bindings = <
+                &kp ESC    &trans    &trans   &trans    &trans    &trans                                &trans     &trans     &trans           &trans     &trans          &kp BSPC
+                &kp TAB    &trans    &trans   &trans    &trans    &trans                                &trans     &trans     &kp UP           &trans     &trans          &trans
+                &kp LCTL   &trans    &trans   &trans    &trans    &trans          &trans                &trans     &kp LEFT   &kp DOWN         &kp RIGHT  &trans          &trans
+                &kp LSHIFT &trans    &trans   &trans    &trans    &trans                                &trans     &trans     &trans           &trans     &trans          &trans
+                                              &none     &trans    &trans    &trans  &kp SPACE  &kp BSPC    &kp RALT   &kp RCTRL
+                >;
+        };
     };
 };
