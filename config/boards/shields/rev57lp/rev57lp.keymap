@@ -78,7 +78,7 @@
         num {
             bindings = <
                 &kp ESC    &trans    &trans   &trans    &trans    &trans                                &trans     &trans     &trans           &trans     &trans          &kp BSPC
-                &kp TAB    &trans    &trans   &trans    &trans    &trans                                &kp N7     &kp N8     &kp N9           &kp FSLH   &kp MULTIPLY    &trans
+                &kp TAB    &trans    &trans   &trans    &trans    &trans                                &kp N7     &kp N8     &kp N9           &kp FSLH   &kp ASTR        &trans
                 &kp LCTL   &trans    &trans   &trans    &trans    &trans          &trans                &kp N4     &kp N5     &kp N6           &kp MINUS  &kp PLUS        &trans
                 &kp LSHIFT &trans    &trans   &trans    &trans    &trans                                &kp N1     &kp N2     &kp N3           &kp COMMA  &kp EQUAL       &RSHIFT RET
                                               &none     &trans    &trans    &trans  &kp SPACE  &kp N0    &kp DOT   &kp trans
