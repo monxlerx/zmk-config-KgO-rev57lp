@@ -51,7 +51,7 @@
                 &kp LCTL   &trans    &trans   &trans    &trans    &trans          &trans                &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT   &kp BSLH        &kp GRAVE
                 &kp LSHIFT &trans    &trans   &trans    &trans    &trans                                &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC   &kp PIPE        &kp TILDE
                                               &none     &trans    &trans    &trans  &trans  &trans     &trans &trans
-                >;
+                >;aasaa  
         };
 
         blutut {
@@ -67,9 +67,9 @@
         raise {
             bindings = <
                 &kp ESC    &trans    &trans   &trans    &trans    &trans                                &trans     &trans     &trans           &trans     &trans          &kp BSPC
-                &kp TAB    &trans    &trans   &trans    &trans    &trans                                &trans     &trans     &kp UP           &trans     &trans          &trans
-                &kp LCTL   &trans    &trans   &trans    &trans    &trans          &trans                &trans     &kp LEFT   &kp DOWN         &kp RIGHT  &trans          &trans
-                &kp LSHIFT &trans    &trans   &trans    &trans    &trans                                &trans     &trans     &trans           &trans     &trans          &trans
+                &kp TAB    &kp F9    &kp F10  &kp F11   &kp F12   &trans                                &trans     &trans     &kp UP           &trans     &trans          &trans
+                &kp LCTL   &kp F5    &kp F6   &kp F7    &kp F8    &trans          &trans                &trans     &kp LEFT   &kp DOWN         &kp RIGHT  &trans          &trans
+                &kp LSHIFT &kp F1    &kp F2   &kp F3    &kp F4    &trans                                &trans     &trans     &trans           &trans     &trans          &trans
                                               &none     &trans    &trans    &trans  &kp SPACE  &kp BSPC    &kp RALT   &kp RCTRL
                 >;
         };
